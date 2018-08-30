@@ -1,0 +1,832 @@
+@font-face {
+  font-family: Ubuntu-regular;
+  src: url("fonts/Ubuntu-R.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu-light;
+  src: url("fonts/Ubuntu-L.ttf");
+}
+
+ @font-face {
+  font-family: Ubuntu-medium;
+  src: url("fonts/Ubuntu-m.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu-bold;
+  src: url("fonts/Ubuntu-b.ttf"); 
+}
+
+@font-face {
+  font-family: Ubuntu-c; 
+  src: url("fonts/Ubuntu-c.ttf");
+} 
+
+.font-light{font-family: Ubuntu-light;}
+.font-semibold{ font-family: Ubuntu-medium;}
+.font-bold{ font-family: Ubuntu-bold;}
+
+
+h1
+{font-size: 30px!important;}
+
+h2
+{font-size: 25px!important;}
+
+h3
+{font-size: 20px!important;}
+
+h4
+{font-size: 15px;}
+
+h5
+{font-size: 10px!important;}
+
+h6
+{font-size: 5px!important;}
+
+
+.fe
+{
+
+  color:#fff;
+}
+
+.p-0{
+  padding: 0;
+}
+
+.m-0{
+  margin: 0;
+}
+
+body {
+  font-family: Ubuntu-regular!important;
+  background-color: #F9F9F9!important;
+}
+
+
+.navbar-static-bottom li {
+  float: left;
+  padding: 22px 30px 10px 3px;
+}
+
+.navbar-static-bottom ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+#wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+
+.gologo {
+  padding: 27px 0px;
+}
+
+#sidebar-wrapper {
+  margin-left: -266px;
+  left: 250;
+  width: 266px;
+  background: #485A68;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+#wrapper.active {
+  padding-left: 0;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 0;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+
+.logout_btn {
+  background: #fff;
+  height: 36px;
+  width: 36px;
+  border-radius: 31px;
+  padding: 11px 0px 0px 0;
+  text-align: center;
+  margin-right: 5px;
+}
+.white_color-text{
+  color: #fff!important;
+}
+
+.navbar { 
+  margin-bottom: 0px!important;  
+}
+
+.btn_blue {
+  background: #0f7be5!important;
+  color: #fff!important;
+  border-radius: 5px!important;
+  border: 0px!important;
+  padding: 6px 17px!important;
+  font-family: ubuntu-light!important;
+  outline: none!important;
+}
+
+.full_comment_box {
+  width: 100%!important;
+  border: 1px solid #0f7be5!important;
+  padding: 10px!important;
+}
+
+.comen_pad{padding: 20px!important;}
+
+.blue_color-text{
+  color:#0F7BE5!important;
+ 
+}
+
+
+ .content-header h2 {
+  margin: 0 0 0 0;
+  font-weight: 100;
+  font-family: ubuntu-light;
+}
+
+.panel-body {
+  padding: 15px;
+  overflow-x: auto!important;
+}
+
+
+.inset h1 {  
+  font-family: ubuntu-regular;
+  font-size: 25px;
+}
+
+.inset h3 {  
+  font-family: ubuntu-light;
+  font-size: 20px;
+  color: #676767;
+}
+
+
+#custom-search-input {
+  margin:0;
+  margin-top: 0px;
+  padding: 0;
+  width: 220px;
+}
+
+#custom-search-input .search-query {
+  padding-right: 3px;
+  padding-right: 4px \9;
+  padding-left: 13px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 30px;
+}
+
+#custom-search-input button {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 2px 5px;
+  margin-top: 2px;
+  position: relative;
+  left: -28px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color:#0F7BE5;
+}
+
+.search-query:focus + button {
+  z-index: 3;   
+}
+
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 266px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.side-bar-img {
+  height: 120px !important;
+  width: 120px !important;
+  border-radius: 50% !important;
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+  font-family: Ubuntu-light!important;
+  font-size: 14px;
+  
+  
+}
+
+.sidebar-nav li a {
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+
+ 
+}
+
+.sidebar-nav li a span:before {
+  position: absolute;
+  left: 0;
+  color: #41484c;
+  text-align: center;
+  width: 20px;
+  line-height: 18px;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li.active {
+  color: #fff;
+  background: rgb(15, 123, 229)!important;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+
+.content_area {
+  min-height: 20px;
+  padding: 19px;
+  margin: 0 14px 20px 10px;
+  background-color: #ffffff;
+  border-top: 4px solid #0F7BE5;
+  border-radius: 1px;
+  -webkit-box-shadow: inset 1px 20px 1px rgba(0,0,0,.05);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.13);
+}
+
+.pull_padleft{padding: 0 0 0 55px!important;}
+
+
+.report_box {
+  height: 160px;
+  padding-top: 50px;
+}
+
+.report_box2 {
+  padding-top: 30px;
+  color: #0f7be5;
+}
+
+.report_box2 h1 {
+  
+  font-size:45px!important;
+  color:#000;
+
+}
+
+.doble_box_outer{
+   padding: 0 !important;
+}
+
+.doble_box_outer .doble_box {
+margin: 0;
+}
+
+.doble_box {
+  min-height: 20px;
+  margin: 0 14px 20px 15px;
+  background-color: #ffffff;
+  border-radius: 1px;
+  -webkit-box-shadow: inset 1px 20px 1px rgba(0,0,0,.05);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.13);
+}
+
+.blue_half{
+  font-family: ubuntu-light;
+  color: #fff;
+  padding: 12px 0px 12px 60px;
+}
+
+.font_bold{font-family: ubuntu-bold;}
+
+.font_thin{font-family: ubuntu-light;}
+
+.sidebar-nav i {
+  margin-right: 18px;
+}
+
+.ext {
+  color: #fff;
+  margin-left: 30px;
+}
+
+
+.blue_back{ background: #0F7BE5;}
+
+.content-header {
+    height: 81px;
+    line-height: 65px;
+    background: #0F7BE5;
+    color: #fff;
+    padding: 19px 0 0 0;
+}
+
+.content-header h1 {
+  margin: 0;
+  margin-left: 20px;
+  line-height: 65px;
+  display: inline-block;
+}
+
+#menu-toggle {
+    text-decoration: none;
+    font-size: 31px;
+}
+
+.btn-menu {
+  color: #fff;
+} 
+
+.btn-line {
+  color: #0f7be5!important;
+  background-color: #ffffff!important;
+  border-color: #0f7be5!important;
+  outline: none;
+}
+
+/* radio*/
+input[type='radio'] {
+  -webkit-appearance:none;
+  width:17px;
+  height:17px;
+  outline:none!important;
+  border:1px solid #0F7BE5;
+  border-radius:50%;
+  outline:none;
+  
+}
+
+input[type='radio']:before {
+  content:'';
+  display:block;
+  width:60%;
+  outline:none!important;
+  height:60%;
+  margin: 20% auto;    
+  border-radius:50%;    
+}
+input[type='radio']:checked:before {
+  background:#0F7BE5;
+  outline:none!important;
+}
+
+
+/* check box */
+
+input[type="checkbox"]{
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #0f7be5;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  margin: 0 5px 0 0;
+}
+
+input[type="checkbox"]:checked{
+  background-image: url(../img/check.png);
+  outline:none;
+}
+
+.msg-row {
+  background-color: #efefef;
+  padding: 32px 13px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  margin: 25px 0;
+}
+
+
+.msg-img {
+  border-right: 2px solid #ccc;
+}
+
+
+
+
+
+
+/* remove the original arrow */
+select.input-lg {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  /* no standardized syntax available, no ie-friendly solution available */
+}
+
+select + i.icons {
+  float: right;
+  margin-top: -25px;
+  margin-right: 5px;
+  /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
+  pointer-events: none;
+  /* everything after this is just to cover up the original arrow */
+  /* (for browsers that don't support the syntax used above) */
+  background-color: #fff;
+  padding-right: 5px;
+}
+
+
+ 
+  .field_main {
+    border: 1px solid #0F7BE5!important;
+    font-family: ubuntu-light;
+}
+  
+  
+
+
+.adv_center{text-align: -webkit-center; text-align: -moz-center;}
+.adv_right{text-align: -webkit-right; text-align: -moz-right;}
+
+.user_profile{
+  margin-bottom: 20px;
+}
+
+
+.inset {
+  padding: 15px 50px 50px 34px;
+
+}
+
+.pro_img {
+  background-image: url(../img/profile.png)!important;
+  height: 259px!important;
+  background-size: cover!important;
+  text-align: center;
+  color: #fff;
+  
+}
+  
+  .blue_half a {
+    color: #f5f5f5!important;
+    text-decoration: none!important;
+}
+
+ td a {
+  color: #0f7be5!important;
+  text-decoration: none!important;
+}
+
+  
+
+
+  .pro_img::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, transparent 0%, rgb(3, 0, 0) 100%);
+    margin-top: 100px;
+    height: 160px;
+    width: 100%;
+    content: '';
+}
+
+.pro_span {
+  position: absolute;
+  top: 214px;
+  z-index: 99;
+  left: 75px;
+  font-size: 20px;
+}
+
+
+.dog_date{
+  color: #0f7be5!important;
+  outline: none!important;
+}
+
+
+.content-header row {margin: 0px 1px!important;}
+
+@media screen and (min-width: 769px) and (max-width: 1600px){ .full_height{height: 100%;} }
+
+
+
+/* main media */
+
+@media (max-width:767px) {
+
+#wrapper {
+  padding-left: 0;
+}
+
+#sidebar-wrapper {
+  left: 0;
+}
+
+#wrapper.active {
+  position: relative;
+  left: 250px;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 250px;
+  width: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#menu-toggle {
+  display: inline-block;
+  color: #fff;
+}
+
+a {
+ 
+  text-decoration:none !important;
+}
+
+.inset {
+  padding: 15px;
+}
+
+}
+
+
+
+
+
+
+
+
+.div-table{font-size: 15px;}
+.div-table thead tr  th 
+{
+    padding: 8px;   
+    border: 0px  !important;
+    font-size: 14px !important;
+
+    color: #000 !important;
+    border-bottom: 0px !important;
+    font-weight: 900 !important;
+
+}
+
+.div-table  tr  td
+{
+    padding: 8px;   
+    border: 0px  !important;
+    font-size: 13px !important;
+
+    border-top: 0px !important;
+    color: #888888 !important;
+} 
+
+
+
+
+.pet_box{
+background: #FDFDFD;
+border: 1px solid #D1D1D1;
+border-radius: 4px;
+max-width: 360px;
+padding: 11px;
+margin-top: 35px;
+margin-bottom: 20px;
+position: relative;
+transition: all .5s;
+}
+.pet_box .media{
+  overflow: visible;
+}
+
+.pet_photo_round{
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+  border: 1px solid #D2D2D2;
+  overflow: hidden;
+}
+
+.pet_photo_round{
+  margin-top: -30px;
+}
+.pet_photo_round img{
+max-height: 130px;
+}
+
+.pet_box .media .media-body h4 a{
+  font-family: Ubuntu-medium;
+font-size: 22px;
+color: #6A6A6A;
+}
+
+.pet_box .media .media-body p{
+font-size: 14px;
+color: #8F8F8F;
+}
+
+.pet_box .table {
+  margin-top: 10px;
+  color: 9C9C9C;
+  margin-bottom: 0;
+}
+
+.pet_box .table td{
+border: none;
+}
+
+.pet_box .table td strong{
+  color:#6A6A6A;
+}
+
+
+.add_new_pet{
+  float:right;
+  background: no-repeat;
+  border: none;
+font-family: Ubuntu-Medium;
+font-size: 18px;
+color: #136EE9;
+}
+
+
+.edit_pet{
+  position: absolute;
+  bottom: 15px;
+  right: 19px;
+  display: none;
+  
+}
+
+.edit_pet a{
+font-size: 22px;
+text-decoration: none !important;
+}
+
+.pet_box:hover {
+  border-color: #136EE9;
+}
+
+.pet_box:hover .edit_pet{
+display: inline-block;
+transition: all .5s;
+}
+
+
+.pet_edit_popup{
+  padding: 25px !important;
+}
+
+
+.pet_photo_popup{
+  width: 110px;
+  height: 100px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.pet_photo_popup img{
+  max-height: 100px;
+}
+
+.pet_edit_popup .media-body{
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.pet_edit_popup .media-body h4{
+  color: #6A6A6A;
+  font-size: 22px;
+}
+
+.pet_edit_popup .media-body p{
+  color: #8f8f8f;
+}
+
+.get_license{
+background: #1EB7B3;
+border-radius: 6px;
+font-size: 16px;
+color: #FFFFFF;
+}
+
+.popup_inputs{
+margin-top: 20px;
+}
+
+.popup_inputs_row label{
+color: #A2A2A2;
+font-weight: normal;
+}
+
+.popup_inputs_row .btn{
+background: #136EE9;
+margin-top: 25px;
+}
+
+
+.add_pet_photo_popup{
+  display: table;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+
+.add_pet_photo_popup i{
+  vertical-align: middle;
+  display: table-cell;
+
+}
+
+
+.pay_license{
+  margin: 20px 0;
+  text-align: center;
+  color: #0F7BE5;
+  font-family: Ubuntu-medium;
+  font-size: 20px;
+}
+
+.pay_license a{
+  width: 110px;
+  display: inline-block;
+  border: 1px solid #0F7BE5;
+  background: #d4d4d4;
+  border-radius: 4px;
+  padding: 3px;
+  font-size: 15px;
+  font-family: Ubuntu-regular;
+background: rgba(53,120,186,0.13);
+
+}
+
+
+
+.history thead td{
+font-family: Ubuntu-Medium;
+font-size: 12px;
+color: #0F7BE5;
+}
+
+.history td{
+font-family: Ubuntu-Light;
+font-size: 16px;
+color: #878787;
+line-height: 56px;
+padding: 12px !important;
+}
+.history td strong{
+  color: #0F7BE5;
+}
+
+.profile_setting .form-control{
+height: 40px;
+width: 260px !important;
+}
+
+.profile_setting .form-inline label{
+width: 100px;
+}

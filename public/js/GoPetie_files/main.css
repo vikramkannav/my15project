@@ -1,0 +1,508 @@
+@font-face {
+  font-family: Ubuntu-regular;
+  src: url("fonts/Ubuntu-R.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu-light;
+  src: url("fonts/Ubuntu-L.ttf");
+}
+
+ @font-face {
+  font-family: Ubuntu-medium;
+  src: url("fonts/Ubuntu-m.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu-bold;
+  src: url("fonts/Ubuntu-b.ttf"); 
+}
+
+@font-face {
+  font-family: Ubuntu-c; 
+  src: url("fonts/Ubuntu-c.ttf");
+} 
+
+h1
+{font-size: 30px!important;}
+
+h2
+{font-size: 25px!important;}
+
+h3
+{font-size: 20px!important;}
+
+h4
+{font-size: 15px!important;}
+
+h5
+{font-size: 10px!important;}
+
+h6
+{font-size: 5px!important;}
+
+
+.fe
+{
+
+  color:#fff;
+}
+
+body {
+  font-family: Ubuntu-regular!important;
+  background-color: #F9F9F9;
+}
+
+
+.navbar-static-bottom li {
+  float: left;
+  padding: 22px 30px 10px 3px;
+}
+
+.navbar-static-bottom ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+#wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+
+.gologo {
+  padding: 27px 0px;
+}
+
+#sidebar-wrapper {
+  margin-left: -265px;
+  left: 250px;
+  width: 265px;
+  background: #485A68;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+#wrapper.active {
+  padding-left: 0;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 0;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+
+.logout_btn {
+  background: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 31px;
+  padding: 18px 0px 0 0;
+  text-align: center;
+}
+
+.white_color-text{
+  color: #fff!important;
+}
+
+.navbar { 
+  margin-bottom: 0px!important;  
+}
+
+.btn_blue {
+  background: #0f7be5!important;
+  color: #fff!important;
+  border-radius: 5px!important;
+  border: 0px!important;
+  padding: 6px 17px!important;
+  font-family: ubuntu-light!important;
+  outline: none!important;
+}
+
+.full_comment_box {
+  width: 100%!important;
+  border: 1px solid #0f7be5!important;
+  padding: 10px!important;
+}
+
+.comen_pad{padding: 20px!important;}
+
+.blue_color-text{
+  color:#0F7BE5!important;
+ 
+}
+
+
+ .content-header h2 {
+  margin: 0 0 0 0;
+  font-weight: 100;
+  font-family: ubuntu-light;
+}
+
+
+
+
+.inset h1 {  
+  font-family: ubuntu-regular;
+  font-size: 25px;
+}
+
+.inset h3 {  
+  font-family: ubuntu-light;
+  font-size: 20px;
+  color: #676767;
+}
+
+
+#custom-search-input {
+  margin:0;
+  margin-top: 0px;
+  padding: 0;
+}
+
+#custom-search-input .search-query {
+  padding-right: 3px;
+  padding-right: 4px \9;
+  padding-left: 13px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 30px;
+}
+
+#custom-search-input button {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 2px 5px;
+  margin-top: 2px;
+  position: relative;
+  left: -28px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color:#0F7BE5;
+}
+
+.search-query:focus + button {
+  z-index: 3;   
+}
+
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+  font-family: Ubuntu-light!important;
+  font-size: 14px;
+  
+  
+}
+
+.sidebar-nav li a {
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+  padding-left: 5px;
+
+ 
+}
+
+.sidebar-nav li a span:before {
+  position: absolute;
+  left: 0;
+  color: #41484c;
+  text-align: center;
+  width: 20px;
+  line-height: 18px;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li.active {
+  color: #fff;
+  background: rgb(15, 123, 229)!important;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+
+.content_area {
+  min-height: 20px;
+  padding: 19px;
+  margin: 0 14px 20px 10px;
+  background-color: #ffffff;
+  border-top: 4px solid #0F7BE5;
+  border-radius: 1px;
+  -webkit-box-shadow: inset 1px 20px 1px rgba(0,0,0,.05);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.13);
+}
+
+.pull_padleft{padding: 0 0 0 55px!important;}
+
+
+.report_box {
+  height: 160px;
+  padding-top: 50px;
+}
+
+.report_box2 {
+  padding-top: 40px;
+  color: #0f7be5;
+}
+
+.report_box2 h1 {
+  
+  font-size:45px!important;
+  color:#000;
+
+}
+
+.doble_box {
+  min-height: 20px;
+  margin: 0 14px 20px 15px;
+  background-color: #ffffff;
+  border-radius: 1px;
+  -webkit-box-shadow: inset 1px 20px 1px rgba(0,0,0,.05);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.13);
+}
+
+.blue_half{
+  font-family: ubuntu-light;
+  color: #fff;
+  padding: 12px 0px 12px 60px;
+}
+
+.font_bold{font-family: ubuntu-bold;}
+
+.font_thin{font-family: ubuntu-light;}
+
+.sidebar-nav i {
+  margin-right: 18px;
+}
+
+.ext {
+  color: #fff;
+  margin-left: 30px;
+}
+
+
+.blue_back{ background: #0F7BE5;}
+
+.content-header {
+    height: 81px;
+    line-height: 65px;
+    background: #0F7BE5;
+    color: #fff;
+    padding: 19px 0 0 0;
+}
+
+.content-header h1 {
+  margin: 0;
+  margin-left: 20px;
+  line-height: 65px;
+  display: inline-block;
+}
+
+#menu-toggle {
+    text-decoration: none;
+    font-size: 31px;
+}
+
+.btn-menu {
+  color: #fff;
+} 
+
+.btn-line {
+  color: #0f7be5!important;
+  background-color: #ffffff!important;
+  border-color: #0f7be5!important;
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* remove the original arrow */
+select.input-lg {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  /* no standardized syntax available, no ie-friendly solution available */
+}
+
+select + i.icons {
+  float: right;
+  margin-top: -25px;
+  margin-right: 5px;
+  /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
+  pointer-events: none;
+  /* everything after this is just to cover up the original arrow */
+  /* (for browsers that don't support the syntax used above) */
+  background-color: #fff;
+  padding-right: 5px;
+}
+
+
+ 
+  .field_main {
+    border: 1px solid #0F7BE5!important;
+    font-family: ubuntu-light;
+}
+  
+  
+
+
+.adv_center{text-align: -webkit-center; text-align: -moz-center;}
+.adv_right{text-align: -webkit-right; text-align: -moz-right;}
+
+.inset {
+  padding: 15px 50px 50px 34px;
+
+}
+
+.pro_img {
+  background-image: url(../img/profile.png)!important;
+  height: 259px!important;
+  background-size: cover!important;
+  text-align: center;
+  color: #fff;
+  
+}
+  
+  .blue_half a {
+    color: #f5f5f5!important;
+    text-decoration: none!important;
+}
+
+ td a {
+  color: #0f7be5!important;
+  text-decoration: none!important;
+}
+
+  
+
+
+  .pro_img::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, transparent 0%, rgb(3, 0, 0) 100%);
+    margin-top: 100px;
+    height: 160px;
+    width: 100%;
+    content: '';
+}
+
+.pro_span {
+  position: absolute;
+  top: 214px;
+  z-index: 99;
+  left: 75px;
+  font-size: 20px;
+}
+
+
+.dog_date{
+  color: #0f7be5!important;
+  outline: none!important;
+}
+
+
+
+
+
+
+
+/* main media */
+
+@media (max-width:767px) {
+
+#wrapper {
+  padding-left: 0;
+}
+
+#sidebar-wrapper {
+  left: 0;
+}
+
+#wrapper.active {
+  position: relative;
+  left: 250px;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 250px;
+  width: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#menu-toggle {
+  display: inline-block;
+  color: #fff;
+}
+
+a {
+  color: #0f7be5 !important;
+  text-decoration:none !important;
+}
+
+.inset {
+  padding: 15px;
+}
+
+}
+
+
+
+
+
+
+
+
